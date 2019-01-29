@@ -1,0 +1,31 @@
+[{"idrole":1,"name":"Project Manager","secs": [
+{"seccode":"010","name":"Project"},
+{"seccode":"105","name":"Categories"},
+{"seccode":"115","name":"Tracking"},
+{"seccode":"085","name":"Financials"}]},
+{"idrole":2,"name":"Team Manager","secs": [
+{"seccode":"065","name":"Share data"},
+{"seccode":"005","name":"Users"},
+{"seccode":"110","name":"Users groups"},
+{"seccode":"035","name":"Actions"},
+{"seccode":"120","name":"Currency"},
+{"seccode":"125","name":"Fiscal period"},
+{"seccode":"080","name":"Pay methods"},
+{"seccode":"095","name":"Periods"},
+{"seccode":"090","name":"Product"},
+{"seccode":"100","name":"Sales forecast"}]},
+{"idrole":3,"name":"Action Manager","secs": [
+{"seccode":"020","name":"Actions Assign user"},
+{"seccode":"050","name":"Actions Attach files"},
+{"seccode":"045","name":"Actions Attach task"},
+{"seccode":"025","name":"Actions Insert"},
+{"seccode":"030","name":"Actions Update"},
+{"seccode":"040","name":"Actions update status"},
+{"seccode":"015","name":"Sensors Update"}]},
+{"idrole":4,"name":"User","secs": [
+{"seccode":"055","name":"Actions Comments"},
+{"seccode":"060","name":"Actions Holds"},
+{"seccode":"070","name":"Market Shopping cart"},
+{"seccode":"075","name":"Market Order boook"}]},
+{"idrole":5,"name":"Guest", "levels": []}]
+

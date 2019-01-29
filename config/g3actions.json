@@ -1,0 +1,11 @@
+{
+    "db": {
+        "provider": "sqlite",
+        "dsn": "db/g3task{0}.db",
+        "username": "",
+        "password": ""
+    },
+    "filelimits": {
+        "attachedfile": "5"
+    }
+}

@@ -1,0 +1,5 @@
+[{"idbg":1,"name": "Sales projection","report": "books","template": "sales"},
+{"idbg":2,"name": "Cash flow forecast","report": "books","template": "forecast"},
+{"idbg":3,"name": "Personal budget","report": "books","template": "mybudget"},
+{"idbg":4,"name": "Profit loss forecast","report": "profit","template": "profit"},
+{"idbg":5,"name": "Actual Cash flow","report": "books","template": "cashflow"}]

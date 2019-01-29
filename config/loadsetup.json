@@ -1,0 +1,4 @@
+{
+    "bp": {"ctrl": "g3ext/market/setup.php"},
+    "sensor": {"ctrl": "g3ext/sensor/setup.php"}
+}

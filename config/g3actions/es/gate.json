@@ -1,0 +1,3 @@
+[{"idgate":1,"name": "abierto","img":"imgActionOpen","deleted": 0,"action":""},
+{"idgate":2,"name": "cerrado","img":"imgActionClose","deleted": 0,"action":"close"},
+{"idgate":3,"name": "borrado","img":"imgActionDelete","deleted": 0,"action":"delete"}]

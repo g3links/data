@@ -1,0 +1,5 @@
+[{"idcurrency":"USD","idcurrencyto":"EUR","value":0.75},
+{"idcurrency":"EUR","idcurrencyto":"USD","value":1.25},
+{"idcurrency":"EUR","idcurrencyto":"AUD","value":0.65},
+{"idcurrency":"USD","idcurrencyto":"AUD","value":1.30},
+{"idcurrency":"AUD","idcurrencyto":"USD","value":0.70}]

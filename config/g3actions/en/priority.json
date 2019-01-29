@@ -1,0 +1,3 @@
+[{"idpriority":1,"name": "HIGH","deleted": 0,"default":0},
+{"idpriority":2,"name": "NORMAL","deleted": 0,"default":1},
+{"idpriority":3,"name": "LOW","deleted": 0,"default":0}]

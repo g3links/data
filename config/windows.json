@@ -1,0 +1,22 @@
+{
+    "about": {"title":":1","width":550},
+    "action": {"tabid":":1","title":":2","width":500,"tabtitle":":3"},
+    "actions": {"tabid":":1","title":":2","width":550,"tabtitle":":3"},
+    "actionsmap": {"tabid":":1","title":":2","width":550,"tabtitle":":3"},
+    "allactions": {"tabid":"projects","title":":1","width":650,"tabtitle":":2"},
+    "bpadmon": {"tabid":":1","title":":2","width":450},
+    "deviceadmon": {"tabid":":1","title":":2","width":450},
+    "login": {"title":":1","width":400},
+    "marketadmon": {"tabid":":1","title":":2","width":600,"tabtitle":":3"},
+    "message": {"title":":1","width":450},
+    "newaction": {"tabid":":1","title":":2","width":500},
+    "newproj": {"title":":1","width":400,"tabtitle":":2"},
+    "orderadmon": {"tabid":":1","title":":2","width":600,"tabtitle":":3"},
+    "projadmon": {"tabid":":1","title":":2","width":250},
+    "projsetup": {"tabid":":1","title":":2","width":400},
+    "projupdate": {"tabid":":1","title":":2","width":400},
+    "search": {"tabid":":1","title":":2","width":550,"tabtitle":":3"},
+    "start": {"tabid":":1","title":":2","width":430,"tabtitle":":3"},
+    "tool": {"title":":1","width":400},
+    "user": {"title":":1","width":400,"icon":"imgUser"}
+}

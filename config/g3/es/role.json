@@ -1,0 +1,31 @@
+[{"idrole":1,"name":"Administrador","secs": [
+{"seccode":"010","name":"Proyecto"},
+{"seccode":"105","name":"Categorias"},
+{"seccode":"115","name":"Rastreo"},
+{"seccode":"085","name":"Finanzas"}]},
+{"idrole":2,"name":"Administrador Grupos","secs": [
+{"seccode":"065","name":"Cmpartir datos"},
+{"seccode":"005","name":"Usuarios"},
+{"seccode":"110","name":"Usuarios grupos"},
+{"seccode":"035","name":"Acciones borrar"},
+{"seccode":"120","name":"Moneda"},
+{"seccode":"125","name":"Periodo Fical"},
+{"seccode":"080","name":"Metodos de pago"},
+{"seccode":"095","name":"Periodos"},
+{"seccode":"090","name":"Productos"},
+{"seccode":"100","name":"Proyeccion ventas"}]},
+{"idrole":3,"name":"Administrador Acciones","secs": [
+{"seccode":"020","name":"Actions Asignar usuario"},
+{"seccode":"050","name":"Actions enlace files"},
+{"seccode":"045","name":"Actions enlace tareas"},
+{"seccode":"025","name":"Actions Insertar"},
+{"seccode":"030","name":"Actions Actualizar"},
+{"seccode":"040","name":"Actions Estado"},
+{"seccode":"015","name":"Sensors Actualizar"}]},
+{"idrole":4,"name":"Usuario","secs": [
+{"seccode":"055","name":"Actions Comentarions"},
+{"seccode":"060","name":"Actions Pausar"},
+{"seccode":"070","name":"Market Carro de compras"},
+{"seccode":"075","name":"Market ordenes de compra"}]},
+{"idrole":5,"name":"Invitado","secs": []}]
+
