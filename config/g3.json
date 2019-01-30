@@ -7,12 +7,12 @@
     },
     "mailer": {
         "host": "",
+        "sender": "",
+        "sendfrom": "",
         "username": "",
         "password": "",
         "SMTPSecure": "ssl",
         "Port": "465",
-        "sender": "G3 Links",
-        "sendfrom": "",
         "testemail": ""
     },
     "emailerror": {
