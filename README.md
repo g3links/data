@@ -11,28 +11,7 @@ Some folders (like attach) will host files uploaded from projects and action eve
  
 ### Installation
 - **copy 'data' folder:** (and all files) in a location other than root website. You can rename the folder name 'data' for something else. The full path will be required to setup the website.
-- **SMTP mail**: complete the information at config/g3.json. Required to communicate with users
-```sh
-    "mailer": {
-        "host": "", --> domain
-        "sender": "", --> Sender name to be displayed
-        "sendfrom": "", -> email 
-        "username": "", --> domain user email
-        "password": "", --> password to access email
-        "testemail": "", -> email when testing under localhost
-        "SMTPSecure": "ssl", 
-        "Port": "465",
-        "testemail": "" -> email under localhost (optional)
-    },
-    "emailerror": {
-        "email": "" -> email to report errors
-    }
-```
-- **token key**: complete the information at config/g3.json. An application key is required to validate calls to the website. [RandomKeygen](https://randomkeygen.com/) is a good source to get samples.
-```sh
-    "token": {
-        "key": "" -> email to report errors
-    }
-```
+- **SMTP mail**: it's required to provide a SMTP outgoing server for deliverying messages
+- **token key**: it's require to provide a Key to keep website secure. [RandomKeygen](https://randomkeygen.com/) is a good source to get samples.
 - continue to install **[G3 links actions](https://github.com/g3links/actions)** website.
 
