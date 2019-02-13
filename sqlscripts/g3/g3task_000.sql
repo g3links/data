@@ -1,4 +1,7 @@
 BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS `version` (
+	`ver`	text NOT NULL DEFAULT '1.0.0'
+);
 CREATE TABLE IF NOT EXISTS `taskuser` (
 	`idtaskuser`	INTEGER NOT NULL,
 	`idtask`	INTEGER NOT NULL,

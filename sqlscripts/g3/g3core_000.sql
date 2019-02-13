@@ -1,4 +1,7 @@
 BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS `version` (
+	`ver`	text NOT NULL DEFAULT '1.0.0'
+);
 CREATE TABLE IF NOT EXISTS `userprovider` (
 	`iduser`	INTEGER NOT NULL,
 	`idprovider`	text NOT NULL,
