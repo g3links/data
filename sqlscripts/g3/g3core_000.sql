@@ -92,15 +92,15 @@ CREATE TABLE IF NOT EXISTS `project_h` (
 );
 CREATE TABLE IF NOT EXISTS `project` (
 	`idproject`	INTEGER NOT NULL,
-	`description`	text NOT NULL,
+	`description`	text NOT NULL DEFAULT '',
 	`deleted`	bigint NOT NULL DEFAULT 0,
 	`createdon`	datetime NOT NULL DEFAULT current_timestamp,
 	`lastmodifiedon`	datetime NOT NULL DEFAULT current_timestamp,
-	`startuppath`	text NOT NULL,
+	`startuppath`	text NOT NULL DEFAULT '',
 	`startupwidth`	INTEGER NOT NULL DEFAULT 400,
 	`ispublic`	bigint NOT NULL DEFAULT 0,
 	`marketname`	text NOT NULL DEFAULT '',
-	`title`	text NOT NULL DEFAULT '',
+	`title`	text NOT NULL,
 	`prefix`	text NOT NULL DEFAULT '',
 	`ticketseq`	INTEGER NOT NULL DEFAULT 0,
 	`remoteurl`	text NOT NULL DEFAULT '',
@@ -119,8 +119,12 @@ CREATE UNIQUE INDEX IF NOT EXISTS `project_user` ON `projectuser` (
 	`iduser`
 );
 CREATE TRIGGER userprovider BEFORE UPDATE ON userprovider BEGIN UPDATE userprovider SET lastupdatedon = current_timestamp WHERE iduser = new.iduser;  END;
-CREATE TRIGGER user BEFORE UPDATE ON user BEGIN INSERT INTO user_h (iduser,name,emal,keyname,idproject,lastmodifiedon) VALUES(OLD.iduser,OLD.name,emal,OLD.keyname,OLD.idproject,OLD.lastaccesson); UPDATE user SET lastaccesson = current_timestamp WHERE iduser = new.iduser;  END;
+CREATE TRIGGER user BEFORE UPDATE ON user BEGIN INSERT INTO user_h (iduser,name,email,keyname,idproject,lastmodifiedon) VALUES(OLD.iduser,OLD.name,OLD.email,OLD.keyname,OLD.idproject,OLD.lastaccesson); UPDATE user SET lastaccesson = current_timestamp WHERE iduser = new.iduser;  END;
 CREATE TRIGGER projectuser BEFORE UPDATE ON projectuser BEGIN UPDATE projectuser SET lastmodifiedon = current_timestamp WHERE idproject = NEW.idproject AND iduser = NEW.iduser;  END;
 CREATE TRIGGER projectservice BEFORE UPDATE ON projectservice BEGIN UPDATE projectservice SET lastmodifiedon = current_timestamp WHERE idproject = NEW.idproject AND name = NEW.name;  END;
 CREATE TRIGGER project BEFORE UPDATE ON project BEGIN INSERT INTO project_h (idproject,description,startupwidth,startuppath,ispublic,marketname,title,prefix,ticketseq,remoteurl,idcurrency,lastmodifiedon) VALUES(OLD.idproject,OLD.description,OLD.startupwidth,OLD.startuppath,OLD.ispublic,OLD.marketname,OLD.title,OLD.prefix,OLD.ticketseq,OLD.remoteurl,OLD.idcurrency,OLD.lastmodifiedon); UPDATE project SET lastmodifiedon = current_timestamp WHERE idproject = new.idproject;  END;
+CREATE TRIGGER project_d BEFORE DELETE ON project BEGIN INSERT INTO project_h (idproject, description, startupwidth, startuppath, ispublic, marketname, title, prefix, ticketseq, remoteurl, idcurrency, lastmodifiedon) VALUES(OLD.idproject, OLD.description, OLD.startupwidth, OLD.startuppath, OLD.ispublic, OLD.marketname, OLD.title, OLD.prefix, OLD.ticketseq, OLD.remoteurl, OLD.idcurrency, OLD.createdon);END;
+CREATE TRIGGER user_d BEFORE DELETE ON user BEGIN INSERT INTO user_h (iduser, name, email, keyname, idproject, lastmodifiedon) VALUES(OLD.iduser, OLD.name, OLD.email, OLD.keyname, OLD.idproject, OLD.createdon);END;
+
 COMMIT;
+
